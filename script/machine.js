@@ -28,7 +28,7 @@ function showOnly(id){
   const sendmoney = document.getElementById('send-money')
   const getbonus = document.getElementById('get-bonus');
   const paybill = document.getElementById('pay-bill');
-  // const transaction = document.getElementById('transactions')
+  const transaction = document.getElementById('transactions')
   // console.log(`addMoney- ${addmoney}, cahsout- ${cashout}`);
   // sobaike hide kore dao
   addmoney.classList.add('hidden');
@@ -36,7 +36,7 @@ function showOnly(id){
   sendmoney.classList.add('hidden');
   getbonus.classList.add('hidden');
   paybill.classList.add('hidden');
-  // transaction.classList.add('hidden');
+  transaction.classList.add('hidden');
 
   //id wala element ta ke tumi show korao
   const selected = document.getElementById(id);

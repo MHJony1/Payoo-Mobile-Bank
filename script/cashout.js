@@ -25,6 +25,22 @@ document.getElementById('cashout-btn').addEventListener("click", function(){
   if(pin === '0909'){
     alert("Cashout Successful")
     setBalance(newBalance);
+
+    
+    //1- history-container ke dhore niye ashbo
+    const history = document.getElementById("history-container");
+    //2- new div create korbo
+    const newHistory = document.createElement('div');
+    // 3- new div innerHTML add korbo
+   newHistory.innerHTML = `
+        <div class="transaction-card p-5 bg-base-200 mb-3 border-l-4 border-red-500">
+            <h3 class="font-bold text-lg text-red-600">Cashout Success</h3>
+            <p>Amount: <span class="font-semibold">${cashoutAmount}</span> BDT</p>
+            <p class="text-sm">Time: ${new Date().toLocaleString()}</p>
+        </div>
+    `;
+      // 4- history container e newHistory append korbo
+      history.append(newHistory);
   }else{
     alert('Invalid Amount');
     return;
