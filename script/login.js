@@ -13,7 +13,7 @@ document.getElementById('login-btn').addEventListener('click', function(){
   if(contactNumber === "01890305043" && pin === "0909"){
     //3-1. true:::> alert> homepage
     // alert('Login Success')
-    window.location.assign("/home.html");
+    window.location.assign("home.html");
   }else{
     //3-2. false:::> alert>return
     alert('Login Failed');
